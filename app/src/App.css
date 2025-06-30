@@ -1,0 +1,123 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); /* Dark blue gradient */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 5px #00000080;
+}
+
+/* Form Container */
+form {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: rgba(20, 20, 35, 0.85); /* Dark translucent */
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #2c2f4a; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4e9af1;
+  box-shadow: 0 0 10px #4e9af180;
+  background-color: #3a3f6b; /* Slightly lighter on focus */
+  color: #ffffff;
+}
+
+/* Button Styling */
+button {
+  margin-top: 15px;
+  background: linear-gradient(to left, #4e9af1, #1e3c72);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  align-self: center;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to left, #1e3c72, #4e9af1);
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: rgba(20, 20, 35, 0.85);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+  border-radius: 12px;
+  overflow: hidden;
+  color: #e0e0e0;
+}
+
+th, td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+  background-color: rgba(30, 30, 60, 0.8);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(40, 40, 70, 0.6);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  form, table {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
